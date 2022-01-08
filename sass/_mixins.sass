@@ -1,0 +1,10 @@
+@mixin mobile
+  @media(max-width: 425px)
+    @content
+
+@mixin special-button($backgorund-color, $border-color, $color)
+  background-color: var($backgorund-color)
+  border-color: var($border-color)
+  color: var($color)
+  font-size: 1rem
+

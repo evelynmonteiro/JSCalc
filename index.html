@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>JSCalc</title>
+
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-header">
+        <h1 class="logo">JSCalc</h1>
+        <div class="theme">
+          <h4>THEME</h4>
+          <div class="theme-container">
+            <div class="theme-container-labels">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-container-buttons">
+              <button class="" id="theme1"></button>
+              <button class="hidden" id="theme2"></button>
+              <button class="hidden" id="theme3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calculator-display">
+        <p id="display" class="calculator-display-number"></p>
+      </div>
+      <div class="calculator-body">
+        <button class="btn" id="number7">7</button>
+        <button class="btn" id="number8">8</button>
+        <button class="btn" id="number9">9</button>
+        <button class="btn del" id="del">DEL</button>
+        <button class="btn" id="number4">4</button>
+        <button class="btn" id="number5">5</button>
+        <button class="btn" id="number6">6</button>
+        <button class="btn operator" id="operatorsum">+</button>
+        <button class="btn" id="number1">1</button>
+        <button class="btn" id="number2">2</button>
+        <button class="btn" id="number3">3</button>
+        <button class="btn operator" id="operatorsub">-</button>
+        <button class="btn" id="dot">.</button>
+        <button class="btn" id="number0">0</button>
+        <button class="btn operator" id="operatordiv">/</button>
+        <button class="btn operator" id="operatormul">x</button>
+        <button class="btn reset" id="reset">RESET</button>
+        <button class="btn equal" id="equal">=</button>
+      </div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/calc.js"></script>
+  </body>
+</html>

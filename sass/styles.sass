@@ -1,0 +1,133 @@
+@use 'mixins'
+
+// Reset and defaults
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Spartan', sans-serif
+
+body, html
+  height: 100%
+  
+body
+  background: var(--main-bg-color)
+  display: grid
+  place-items: center
+  align-items: center 
+  transition: 0.2s
+
+// Styles
+
+.calculator
+  width: 400px
+  overflow: hidden
+  @include mixins.mobile
+    width: 90%
+
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 1.5rem
+    color: var(--header-text-color)
+
+    .logo
+      font-size: 1.25rem 
+
+    .theme
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      gap: 1rem
+
+      h4
+        line-height: 16px
+        font-size: 0.6rem
+
+      &-container-labels
+        font-size: 0.75rem
+        margin-bottom: 0.2rem
+        display: flex
+        justify-content: space-evenly
+        gap: 0.5rem
+
+        span
+          font-size: 0.6rem
+          font-weight: 700
+      
+      &-container-buttons
+        padding: 0.3rem
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        background-color: var(--secondary-bg-color)
+        border-radius: 15px
+
+        button
+          width: 12px
+          height: 12px
+          border: none
+          border-radius: 50%
+          background-color: var(--emphasis-color)
+          cursor: pointer
+        
+        button.hidden
+          opacity: 0
+
+  &-display
+    height: 100px
+    padding: 1rem
+    margin-bottom: 1rem 
+    border-radius: 10px
+    background-color: var(--third-bg-color)
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    overflow: hidden
+
+    &-number
+      color: var(--header-text-color)
+      font-size: 2rem
+      font-weight: bold
+      text-align: right 
+
+  &-body
+    padding: 1rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1rem
+    background-color: var(--secondary-bg-color)
+    border-radius: 10px
+
+    .btn
+      height: 48px
+      border-radius: 10px
+      font-size: 1.5rem
+      font-weight: bold
+      color: var(--main-text-color)
+      background-color: var(--main-key-color)
+      border: none
+      border-bottom: 2px solid
+      border-right: 2px solid
+      border-color: var(--main-key-color-shadow)
+      cursor: pointer
+
+      &:hover
+        border: none
+
+    .del 
+      @include mixins.special-button(--second-key-color, --second-key-color-shadow, --second-text-color)
+
+    .reset
+      @include mixins.special-button(--second-key-color, --second-key-color-shadow, --second-text-color)
+      grid-column: 1 / 3
+
+    .equal
+      @include mixins.special-button(--emphasis-color, --emphasis-color-shadow, --equal-text-color)
+      grid-column: 3 / 5
+
+  
+
+  
