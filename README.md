@@ -3,7 +3,7 @@
 This Javascript Calculator is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <p>
-  <img alt="Desktop JSCalc Interface" title="DesktopJSCalc" src="images/JSCalc-Desktop3.png" width="500">
+  <img alt="Desktop JSCalc Interface" title="DesktopJSCalc" src="images/JSCalc-Desktop3.png">
 </p>
 
 ## Table of contents
@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [JSCalc - Click here!](https://your-live-site-url.com)
+- Live Site URL: [JSCalc - Click here!](https://jscalcevemon.netlify.app/)
 
 ## My process
 
